@@ -1,0 +1,14 @@
+Hello world!
+I am file.txt
+I have been created to experiment with links in linux.
+
+Do you know what Links are?
+Links are files or folders which are pointers to the other files or folders.
+
+There are two types of links:
+Hard Links: These files are the pointers that actually refer to the actual address of the target file address on the inode table (address of the disk). 
+- They never refer to a folder because it can lead to infinite loops and hence crash the whole systems as the system will keep calling to a folder that has another folder which points to the earlier
+- If you remove the target file, this hard link will still point to that address on the inode table having addresses and it will still contain the same contents as that of the target file as the data never gets erased from the disk, but as this hard link is on the inode table which points to the same memory location so the data will never be deleted until you delete all the hard links that point to that memory address in the inode table.
+
+Soft Links: These files are the pointers that actually point to the location of the target file or folder in the file system. 
+- If you remove the target file, then this pointer file i.e. soft link will point to that location but as nothing is present there, then it will give back nothing. 
