@@ -43,4 +43,3 @@ SCREENSHOT 14: Pod should show Failed.
 ![alt text](image-14.png)
 
 SCREENSHOT 15: Show the failure information.
-![alt text](image-15.png)
